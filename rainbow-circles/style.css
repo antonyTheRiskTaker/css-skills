@@ -1,0 +1,30 @@
+:root {
+  --circle-thinkness: 25px;
+}
+
+div {
+  border-radius: 50%;
+}
+
+#inner {
+  width: calc(var(--circle-thinkness) * 2);
+  height: calc(var(--circle-thinkness) * 2);
+  background-color: #800080;
+  border: var(--circle-thinkness) solid #0000ff;
+}
+
+#middle {
+  width: calc(var(--circle-thinkness) * 4);
+  height: calc(var(--circle-thinkness) * 4);
+  background-color: #008000;
+  padding: var(--circle-thinkness);
+  border: var(--circle-thinkness) solid #ffff00;
+}
+
+#outer {
+  width: calc(var(--circle-thinkness) * 8);
+  height: calc(var(--circle-thinkness) * 8);
+  background-color: #ffa500;
+  padding: var(--circle-thinkness);
+  border: var(--circle-thinkness) solid #ff0000;
+}
