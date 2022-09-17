@@ -29,7 +29,7 @@ h6 {
 #left {
   display: flex;
   flex-direction: column;
-  flex: 1; /*? flex property: what is it? */
+  flex: 1; /*! flex property: please read the flex property section (from p.614 CSS definitive guide) */
   align-items: center;
   justify-content: center;
   height: 100vh;
