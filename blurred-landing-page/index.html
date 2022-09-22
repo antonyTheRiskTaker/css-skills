@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="current-year.js"></script>
+  <script defer src="./js/current-year.js"></script>
   <title>Traversy Media</title>
 </head>
 <body>
+
   <header class="showcase">
     <div class="content">
-      <img src="logo.png" class="logo" alt="Traversy Media" />
+      <img src="./img/logo.png" class="logo" alt="Traversy Media" />
       <div class="title">
         Welcome To Traversy Media
       </div>
@@ -24,21 +25,17 @@
 
   <!-- Services -->
   <section class="services">
-    <div class="container grid-3">
+    <div class="container grid-3 center">
       <div>
         <i class="fab fa-youtube fa-3x"></i>
         <h3>YouTube</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nam.</p>
       </div>
-    </div>
-    <div class="container grid-3">
       <div>
         <i class="fas fa-chalkboard-teacher fa-3x"></i>
         <h3>Courses</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, nam.</p>
       </div>
-    </div>
-    <div class="container grid-3">
       <div>
         <i class="fas fa-briefcase fa-3x"></i>
         <h3>Freelancing Projects</h3>
@@ -48,7 +45,7 @@
   </section>
 
   <!-- About -->
-  <section class="about">
+  <section class="about bg-light">
     <div class="container">
       <div class="grid-2">
         <div class="center">
@@ -65,7 +62,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="center">
+  <footer class="center bg-dark">
     <p>Traversy Media &copy; <span id="year"></span></p>
   </footer>
 </body>
