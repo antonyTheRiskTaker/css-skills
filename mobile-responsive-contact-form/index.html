@@ -5,19 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acme Web Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1 class="brand">Acme Web Design</h1>
+    <h1 class="brand"><span>Acme</span> Web Design</h1>
     <!-- (Element below) it's where the CSS grid is applied to -->
-    <div class="wrapper">
+    <div class="wrapper animate__animated animate__bounceInLeft">
       <div class="company-info">
         <h3>Acme Web Design</h3>
         <ul>
-          <li>44 Something St</li>
-          <li>(555) 555-5555</li>
-          <li>test@acme.test</li>
+          <li><i class="fa fa-road"></i> 44 Something St</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@acme.test</li>
         </ul>
       </div>
       <div class="contact">
@@ -39,11 +41,11 @@
             <label for="#">Phone Number</label>
             <input type="text" name="phone">
           </p>
-          <p>
+          <p class="full">
             <label for="#">Message</label>
             <textarea name="name" rows="5"></textarea>
           </p>
-          <p>
+          <p class="full">
             <button>Submit</button>
           </p>
         </form>
