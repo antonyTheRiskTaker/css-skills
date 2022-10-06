@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/44cf9e0220.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ChatCord App</title>
+</head>
+
+<body>
+  <div class="join-container">
+    <header class="join-header">
+      <h1><i class="fas fa-smile"></i> ChatCord</h1>
+    </header>
+    <main class="join-main">
+      <form action="chat.html">
+
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Enter username..." required />
+        </div>
+
+        <div class="form-control">
+          <label for="room">Room</label>
+          <select name="room" id="room">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Java">Java</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Join Chat</button>
+
+      </form>
+    </main> <!-- "join-main" ends -->
+  </div> <!-- "join-container" ends -->
+</body>
+
+</html>
