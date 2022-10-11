@@ -120,6 +120,12 @@ button.ghost {
 .sign-in-container {
   left: 0;
   width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
   opacity: 0;
   z-index: 1;
 }
@@ -140,7 +146,8 @@ button.ghost {
 .overlay {
   background-color: #ff416c;
   /* (Line below) if background-color doesn't work, switch to simply background property */
-  background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+  background: linear-gradient(to right, #ff4b2b,
+  #ff416c) no-repeat 0 0 / cover;
   color: #ffffff;
   position: relative;
   left: -100%;
