@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abstract - Help Center</title>
   <link rel="stylesheet" href="./css/abstract-help-page-style.css" />
+  <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script defer src="https://kit.fontawesome.com/44cf9e0220.js" crossorigin="anonymous"></script>
   <!-- (Link to the original page) https://help.abstract.com/hc/en-us  -->
   <!-- (Link to resources) https://www.frontendpractice.com/projects/abstract -->
 </head>
@@ -16,8 +18,20 @@
 
     <header class="topbar container">
       <div class="topbar__inner">
-        <div class="topbar__logo-wrapper"></div>
-        <div class="topvar__buttons"></div>
+        <div class="topbar__logo-wrapper">
+          <a href="" class="topbar__logo" title="Go to goabstract.com">
+            <box-icon name='home-alt-2' ></box-icon>
+          </a>
+          <a href="" class="topbar__help-center">Help Center</a>
+        </div>
+        <div class="topvar__buttons">
+          <button class="btn btn--topbar btn--topbar-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button type="button" class="tcon tcon-menu--xcross">
+            <!-- ! Stopped here -->
+          </button>
+        </div>
         <div class="search-box search-box--topbar"></div>
         <div class="search-mobile"></div>
         <div class="topbar__controls" style="display: none;"></div>
