@@ -42,6 +42,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* (Line below) CSS rule that allows the rotation animation for the hamburger button to run smoothly */
+  transition: all 0.4s ease;
 }
 
 /* Top and bottom lines */
@@ -61,3 +63,18 @@
 .menu-wrap .hamburger > div:after {
   top: 10px;
 }
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
