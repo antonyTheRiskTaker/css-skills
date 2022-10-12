@@ -47,7 +47,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* (Line below) important css rule if you want to center the contents in the middle of the web page by marking its height (i.e. 100%) over the entire .showcase block (100vh creates a similar effect) */
+  /* (Line below) important css rule if you want to center the contents in the middle of the web page by marking its height (i.e. 100%) over the entire showcase-inner block (100vh creates a similar effect) */
   height: 100%;
 }
 
