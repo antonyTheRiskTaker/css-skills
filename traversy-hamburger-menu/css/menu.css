@@ -32,3 +32,32 @@
 }
 
 /* Hamburger line */
+/* (Line below) remember that empty div element, which serves as the middle line of the hamburger button */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  /* (Line below) a variable can be created to hold the hamburger button lines */
+  height: 2px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  /* (Line below) first, move both hamburger lines above the middle one */
+  top: -10px;
+  width: 100%;
+  /* (Line below) a variable can be created to hold the hamburger button lines */
+  height: 2px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
