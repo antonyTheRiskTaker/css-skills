@@ -40,3 +40,36 @@ body {
   /* (Line below) by default, the background image is placed on top of everything in the showcase block (i.e. the header element) */
   z-index: -1;
 }
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* (Line below) important css rule if you want to center the contents in the middle of the web page by marking its height (i.e. 100%) over the entire .showcase block (100vh creates a similar effect) */
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
