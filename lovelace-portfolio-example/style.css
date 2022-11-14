@@ -30,6 +30,11 @@ h1, h2 {
   margin: 0 0 var(--spacing-2) 0;
 }
 
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
@@ -65,8 +70,6 @@ nav {
 }
 
 .navigation-item a {
-  color: var(--font-color);
-  text-decoration: none;
   font-weight: 600;
 }
 
@@ -121,6 +124,13 @@ summary.project-title {
   font-size: 2em;
   width: 2em;
   margin-top: var(--spacing-1);
+}
+
+/* Contact icons */
+.icon {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
 }
 
 /* Footer */
