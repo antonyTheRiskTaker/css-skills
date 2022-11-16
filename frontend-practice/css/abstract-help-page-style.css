@@ -2,6 +2,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
@@ -9,4 +10,35 @@
   --pale-blue: #dadbf1;
   --black: #000000;
   --white: #ffffff;
+}
+
+body {
+  font-family: 'GT America Standard', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 100%;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  height: 5.5em;
+}
+
+.navbar-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1900px;
+  width: 90%;
+  margin: auto;
 }
