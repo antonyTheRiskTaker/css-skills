@@ -19,6 +19,10 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 0 1rem;
 }
@@ -61,3 +65,36 @@ body {
   padding: 2px 0 4px 0.8rem;
   border-left: 2px solid var(--white);
 }
+
+.navbar__controls {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn.submit-a-request {
+  border: 1px solid var(--white);
+}
+
+.btn.login {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--dark-blue);
+  margin-left: 1rem;
+}
+
+/** Could be put in media query */
+/* .navbar__controls__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+} */
