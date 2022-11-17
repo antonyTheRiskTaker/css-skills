@@ -23,6 +23,8 @@ body {
   padding: 0 1rem;
 }
 
+/* Navbar */
+
 .navbar {
   position: relative;
   display: flex;
@@ -33,7 +35,7 @@ body {
   height: 5.5em;
 }
 
-.navbar-contents {
+.navbar__contents {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,4 +43,21 @@ body {
   max-width: 1900px;
   width: 90%;
   margin: auto;
+}
+
+.navbar__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__helpcenter {
+  display: inline-block;
+  margin: 0.25rem 0 0 0.8rem;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -.5px;
+  padding: 2px 0 4px 0.8rem;
+  border-left: 2px solid var(--white);
 }
