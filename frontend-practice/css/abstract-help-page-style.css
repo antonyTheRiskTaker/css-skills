@@ -10,6 +10,9 @@
   --pale-blue: #dadbf1;
   --black: #000000;
   --white: #ffffff;
+
+  --heavy-font-weight: 700;
+  --light-font-weight: 400;
 }
 
 body {
@@ -27,6 +30,20 @@ a {
   padding: 0 1rem;
 }
 
+.container-inner {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+}
+
 /* Navbar */
 
 .navbar {
@@ -35,7 +52,7 @@ a {
   background-color: var(--black);
   color: var(--white);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: var(--heavy-font-weight);
   height: 5.5em;
 }
 
@@ -59,7 +76,7 @@ a {
   margin: 0.25rem 0 0 0.8rem;
   vertical-align: middle;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: var(--light-font-weight);
   line-height: 1.5rem;
   letter-spacing: -.5px;
   padding: 2px 0 4px 0.8rem;
@@ -68,16 +85,7 @@ a {
 
 .navbar__controls {
   font-size: 1rem;
-  font-weight: 500;
-}
-
-.btn {
-  padding: 0.5rem 1.5rem;
-  line-height: 1.5;
-  border-radius: 8px;
-  color: var(--white);
-  cursor: pointer;
-  text-align: center;
+  font-weight: var(--light-font-weight);
 }
 
 .btn.submit-a-request {
@@ -89,6 +97,38 @@ a {
   padding-right: 2rem;
   background-color: var(--dark-blue);
   margin-left: 1rem;
+}
+
+/* Hero Section & Search Bar */
+.hero-unit {
+  position: relative;
+  background-color: var(--pale-blue);
+  overflow: hidden; /*? I don't know what's the point of this declaration. */
+}
+
+.hero-unit--large {
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.hero-unit__content {
+  position: relative;
+  max-width: 720px;
+  /* z-index: 2; */ /*? Don't know the point of a z-index */
+}
+
+.hero-unit__title {
+  font-size: 5rem;
+  font-weight: var(--light-font-weight);
+  text-align: center;
+  letter-spacing: -4px;
+  /** (Line below) the figure in the middle refers to left and right margin */
+  margin: 0 0 1rem;
+}
+
+/* TODO: continue from here to finish styling for search bar */
+.search-box {
+  position: relative;
 }
 
 /** Could be put in media query */
