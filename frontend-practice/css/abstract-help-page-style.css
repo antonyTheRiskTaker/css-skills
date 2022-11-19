@@ -114,7 +114,8 @@ a {
 .hero-unit__content {
   position: relative;
   max-width: 720px;
-  /* z-index: 2; */ /*? Don't know the point of a z-index */
+  /*? (Line below) Don't know the point of a z-index */
+  z-index: 2;
 }
 
 .hero-unit__title {
@@ -129,6 +130,41 @@ a {
 /* TODO: continue from here to finish styling for search bar */
 .search-box {
   position: relative;
+}
+
+.search-box--hero-unit {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 720px;
+}
+
+.search-box--hero-unit #query {
+  padding: 1rem 1rem;
+  box-shadow: 0 9px 14px 0 rgb(0 0 0 / 10%);
+}
+
+.search-box input[type='search'] {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-weight: var(--light-font-weight);
+  background-color: var(--white);
+  /*? (Line below) Is there a point adding this declaration? */
+  background-image: none;
+  border: 1px solid #dee2e6;
+}
+
+.hero-unit__arrow-icon {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0.1rem;
+  bottom: -0.1rem;
+  width: 2rem;
+  vertical-align: middle;
+}
+
+.search-box input[type='submit'] {
+  display: none;
 }
 
 /** Could be put in media query */
