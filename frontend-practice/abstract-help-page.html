@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/abstract-help-page-style.css" />
+  <script defer src="https://kit.fontawesome.com/44cf9e0220.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,11 +33,11 @@
         <h2 class="hero-unit__title">
           How can we help?
         </h2>
-        <!-- TODO: continue from here to finish styling search bar -->
-        <form role="search">
-          <input type="search" placeholder="Search" />
+        <form role="search" class="search-box search-box--hero-unit">
+          <input type="search" id="query" placeholder="Search" />
           <input type="submit" value="Search" />
         </form>
+        <i class='fas fa-arrow-right hero-unit__arrow-icon'></i>
       </div>
     </div>
   </header>
