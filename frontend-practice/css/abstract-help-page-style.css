@@ -127,7 +127,6 @@ a {
   margin: 0 0 1rem;
 }
 
-/* TODO: continue from here to finish styling for search bar */
 .search-box {
   position: relative;
 }
@@ -166,6 +165,8 @@ a {
 .search-box input[type='submit'] {
   display: none;
 }
+
+/* TODO: continue styling from here */
 
 /** Could be put in media query */
 /* .navbar__controls__container {
