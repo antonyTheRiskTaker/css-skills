@@ -229,7 +229,56 @@ a {
   font-weight: 400;
 }
 
-/* TODO: continue from here for styling */
+/* Footer */
+.footer {
+  position: relative;
+  padding-bottom: 60px;
+  color: var(--white);
+  background-color: var(--black);
+  font-weight: var(--light-font-weight);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.footer__inner {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1900px;
+  padding-bottom: 6.25rem;
+}
+
+.footer-column {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: var(--heavy-font-weight);
+}
+
+.footer a {
+  color: var(--white);
+  display: block; 
+}
+
+.footer .footer-column-copyright {
+  /** (Line below) this declaration is necessary to allow the copyright container be placed at the bottom right corner of the footer container. */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-column-copyright box-icon {
+  margin-bottom: 1.25rem;
+}
 
 /** Could be put in media query */
 @media (min-width: 1200px) {
